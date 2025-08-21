@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import Header from './components/Header'
 import './App.css'
+import Form from './components/Form'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // const handleSubmit = (formData) => {
+// event.preventDefault();
+// const formL = event.currentTarget;
+// const formData = new FormData(formL);
+// const Email = formData.get("email");
+// const Password = formData.get("password");
+// console.log(Email);
+// console.log(Password);
+// formL.reset();
+  // };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  //   <>
+  //     <h1>Signup Form</h1>
+  //     <form action={handleSubmit} method='post'>
+  //       <label htmlFor="email">Email:</label>
+  //       <input
+  //         id="email"
+  //         type="email"
+  //         name="email"
+  //         placeholder="name@example.com"
+  //         required
+  //       />
+  //       <br />
+  //       <label htmlFor="password">password:</label>
+  //       <input id="password" type="password" name="password" required />
+  //       <br />
+  //       <button>Submit</button>
+  //     </form>
+  //   </>
+
+  <>
+  <Header/>
+  <Form/>
+  </>  
+  );
 }
 
 export default App
