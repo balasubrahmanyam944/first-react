@@ -2,6 +2,9 @@
 import Header from './components/Header'
 import './App.css'
 import Form from './components/Form'
+import Main from './components/Main';
+import Mains from './components/Mains';
+import Test from './components/Test'
 
 function App() {
 
@@ -37,8 +40,11 @@ function App() {
   //   </>
 
   <>
-  <Header/>
-  <Form/>
+  {/* <Header/> */}
+  {/* <Form/> */}
+  {/* <Main/> */}
+  <Mains/>
+  <Test/>
   </>  
   );
 }

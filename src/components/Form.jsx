@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState} from "react";
 
 export default function Form() {
   const [emp, setEmp] = useState("");
@@ -10,9 +10,13 @@ export default function Form() {
   //     // setIngredients(event.target.value);
   //     // event.target.value = ""
   // }
+  // Add empty dependency array to run once after component mounts
+
   const handleAddIngredient = (formData) => {
     // event.preventDefault()
-
+// const formEl = event.currentTarget
+// const formData = new FormData(formEl)
+// const email = formData.get("email")
 
     const newIngredient = formData.get("ingredient");
     // const newEmp = formData.get("emplyementStatus")
